@@ -34,30 +34,9 @@ unavailable = 0
 failed = 0
 max_workers = 5
 
-proxies = [ "163.172.36.9:15003",
-            "163.172.26.179:15003",
-            "163.172.48.119:15003",
-            "51.15.0.33:15003",
-            "163.172.36.9:15004",
-            "163.172.26.179:15004",
-            "163.172.48.119:15004",
-            "51.15.0.33:15004",
-            "51.159.4.17:15003",
-            "163.172.47.51:15003",
-            "163.172.251.67:15003",
-            "163.172.36.207:15003",
-            "51.159.4.17:15004",
-            "163.172.47.51:15004",
-            "163.172.251.67:15004",
-            "163.172.36.207:15004",
-            "63.141.241.98:16001",
-            "173.208.209.42:16001",
-            "69.197.179.122:16001",
-            "173.208.199.74:16001",
-            "163.172.36.211:16001",
-            "163.172.61.67:16001",
-            "51.15.0.181:16001",
-            "163.172.214.117:16001" ]
+proxies = [ "IP:PORT",
+            "IP:PORT",
+            "IP:PORT" ]
 
 with open("./data/names.txt", "r") as f:
     names = f.read().splitlines()
@@ -72,7 +51,7 @@ def solve_captcha(url):
     if thread_number < 10:
         thread_number = "0" + str(thread_number)
     while True:
-        anycaptcha_api_key = "cd1c851e8c2f4ac39c32e6828a6aeba9"
+        anycaptcha_api_key = "API_KEY"
         site_key = "B7D8911C-5CC8-A9A3-35B0-554ACEE604DA"
         client = AnycaptchaClient(anycaptcha_api_key)
         task = FunCaptchaProxylessTask(url, site_key)

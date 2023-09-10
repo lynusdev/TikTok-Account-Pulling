@@ -15,9 +15,9 @@ warnings.filterwarnings("ignore")
 init(convert=True)
 original_path = os.getcwd()
 
-apk = "15.0.1.apk"
+apk = "PATH_TO_APK"
 package_name = "com.zhiliaoapp.musically"
-proxy = "83.149.70.159:13082"
+proxy = "IP:PORT"
 
 CERROR = Fore.RED
 CWARNING = Fore.YELLOW
